@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+     
+    background: linear-gradient(135deg, #1e163a, #343a34,rgb(1, 1, 2));
+    display: flex;
+    transition: background-color 0.5s ease;}
+    body>div{
+        
+        justify-content: center;
+    }
+.ima{
+    background: linear-gradient(83deg, rgb(228 183 216), rgb(221 105 249), rgb(231 231 69));
+    height: 100px;
+    width: 38vw;
+    font-size: 5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(225, 169, 230);
+}
+.imae{
+    font-size: 1.5rem;
+    background: wheat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#element{
+    background: linear-gradient(83deg, rgb(228 183 216), rgb(221 105 249), rgb(231 231 69));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.button-cover span{
+    text-align: center;
+    font-size: smaller;
+    
+}
+.container {
+    text-align: center;
+    margin: 10px ;
+    width: 400px;
+    padding: 2px;
+    background: white;
+    box-shadow: 0 10px 20px -8px #497575;
+    border-radius: 8px;
+    color: #26585f;
+}
+
+textarea, input, button {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Dark theme styles */
+.dark {
+    background: linear-gradient(135deg, #d664b0, #2d5fb1 , rgb(88, 197, 188));
+    color: white;
+}
+
+.dark button {
+    background-color: #f39c12;
+}
+
+.dark button:hover {
+    background-color: #e67e22;
+}
+
+/* From Uiverse.io by devestter */
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  width: 200px;
+  height: 140px;
+  box-sizing: border-box;
+}
+
+.button-cover {
+ margin: 0px;
+
+}
+.button.r{
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    display: flex;
+justify-content: center;
+align-items: center;}
+nav{
+    /* background: #000;
+    */
+    width: 10px;
+    height: 00.1px ;
+}
+.button-cover:before {
+  /* counter-increment: button-counter;
+  content: counter(button-counter); */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 90px;
+  height: 38px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #524949;
+  transition: 1s ease all;
+  z-index: 1;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 12px;
+}
+
+#button-3 .knobs:before {
+  content: "DARK";
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  /* width: 23px;
+  height: 11px; */
+  color: rgb(22, 21, 21);
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: rgb(240, 235, 233);
+  border-radius: 30%;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button-3 .checkbox:active + .knobs:before {
+  width: 36px;
+  border-radius: 2px;
+}
+
+#button-3 .checkbox:checked:active + .knobs:before {
+  margin-left: -26px;
+}
+
+#button-3 .checkbox:checked + .knobs:before {
+  content: "light";
+  left: 50px;
+  background-color: #f44336;
+  color: white;
+}
+
+#button-3 .checkbox:checked ~ .layer {
+  background-color: #524949;
+}
+/* From Uiverse.io by SouravBandyopadhyay */ 
+.card-title {
+    color: #262626;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #6293c8, #384c6c);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card {
+    display: block;
+    position: relative;
+    max-width: 300px;
+    max-height: 320px;
+    background-color: #0f3b42;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #5b2e97, #a7d1d9);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #1258a3, #da5ba5);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .card:hover:before {
+    transform: scale(28);
+  }
+  
+  .card:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+  
